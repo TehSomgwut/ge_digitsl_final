@@ -1,0 +1,122 @@
+* {
+    padding:0px;
+    margin:5px;
+}
+
+body{
+    background:var(--background-color-default);
+}
+
+
+:root {
+    --border-color-default:rgb(68,68,68);
+    --background-color-default:linear-gradient(rgb(50, 0, 0),rgb(153, 3, 3));
+    --mainTone-color-default:#9A1516;
+    --white:white;
+    --black:black;
+
+}
+
+.head,.main .image,body,.format,.protectionContainer,#shouldDoInformationContainer {
+    display:flex;
+}
+
+.main,.information {
+    background-color: var(--white);
+}
+
+.main{
+    /*background-color:aquamarine;*/
+    max-width:550px;
+    min-width: 400px;
+    border:4px var(--border-color-default) solid;
+    border-radius:0px;
+    padding:20px;
+    height:90vh;
+    overflow: scroll;
+}
+
+.main img{
+    max-width:100%;
+    margin:2px;
+}
+
+
+.format {
+    white-space:nowrap;
+    overflow-x: scroll;
+    height:fit-content;
+    border-bottom: 1px var(--border-color-default) solid;
+    padding:20px;
+}
+
+.information {
+    border:var(--border-color-default) solid 4px;
+    height:90vh;
+    min-width:600px;
+    overflow-y: scroll;
+    padding:20px;
+}
+
+#scammerTrickInformation,#protectionInformation,#shoudDoInformation {
+    display:none;
+}
+
+.information svg {
+    border-radius:50px;
+    background-color:var(--white);
+}
+
+.type {
+    border:4px var(--border-color-default) solid;
+    border-radius: 40px;
+    padding:5px;
+    height:1.5em;
+    width: fit-content;
+    display:flex;
+    transition:0.25s;
+}
+
+#scammerTrickInformation {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#scammerTrickInformation p {
+    grid-column:1/4;
+    margin:15px;
+}
+
+#id5,#id7 {
+    grid-column: 2/4;
+}
+
+.Trick {
+    border:var(--border-color-default) solid 1px;
+}
+
+img {
+    border-radius:5px;
+}
+
+.protectionContainer img {
+    width:300px;
+}
+
+#shouldDoInformationContainer img {
+    max-width:800px;
+}
+
+.shouldDoContainer {
+    border:#9A1516 1px solid;
+    padding:5px;
+}
+
+.policeSorce {
+    background-color: var(--white);
+    border-radius: 4px;
+    color:var(--black);
+    font-size:1.3em;
+    padding:2px;
+    transition:0.5s;
+}

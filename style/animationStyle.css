@@ -1,0 +1,32 @@
+@import url(pageStyle.css);
+
+.type:hover,.hovered {
+    color:var(--white);
+    background-color: var(--mainTone-color-default);
+    transition:0.3s;
+    border:var(--black) 4px solid;
+}
+
+.Trick:hover {
+    color:var(--white);
+    background-color: var(--mainTone-color-default);
+    transition:0.3s;
+    border:var(--black) 1px solid;
+}
+
+.shouldDoContainer:hover {
+    scale:1.1;
+    transition:0.2s;
+    color:var(--white);
+    background-color: var(--mainTone-color-default);
+    opacity:1;
+}
+
+
+.shouldDoContainer {
+    transition:0.1s;
+    opacity:0.8;
+}
+#do3 a{
+    transition: 0.4s;
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Ptag;
+    src: url(../font/TH\ NiramitITù.ttf);
+}
+
+@font-face{
+    font-family: bold;
+    src: url(../font/TH\ Chakra\ Petch\ Bold.ttf);
+}
+
+@font-face {
+    font-family: format;
+    src: url(../font/TH\ NiramitITù\ Bold.ttf);
+}
+
+
+
+.main h1  {
+    font-family:bold;
+    font-size:2.5em;
+}
+
+p {
+    font-family:Ptag;
+    font-size:1.5em;
+}
+
+figcaption{
+    font-family:Ptag;
+    font-size:1.1em;
+}
+
+.type {
+    cursor:pointer;
+    font-family:format;
+    font-size:1.7em;
+    text-align:center;
+}
+
+.welcome {
+    font-size: 6px;
+    text-decoration:underline;
+    text-align:center;
+    color:rgb(185, 0, 0);
+}
