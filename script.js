@@ -43,8 +43,6 @@ trick.addEventListener(("click"),() => {
     protection.classList.remove("hovered");
     shouldDo.classList.remove("hovered");
 
-    // sourceContainer.style.display = "none";
-    // source.style.display = "block";
 })
 
 protection.addEventListener(("click"), () => {
@@ -58,8 +56,6 @@ protection.addEventListener(("click"), () => {
     protection.classList.add("hovered");
     shouldDo.classList.remove("hovered");
 
-    // sourceContainer.style.display = "none";
-    // source.style.display = "block";
 })
 
 shouldDo.addEventListener(("click"),() => {
@@ -73,8 +69,6 @@ shouldDo.addEventListener(("click"),() => {
     protection.classList.remove("hovered");
     shouldDo.classList.add("hovered");
 
-    // sourceContainer.style.display = "none";
-    // source.style.display = "block";
 })
 
 const sourceContainer = document.querySelector(".sourceContainer")

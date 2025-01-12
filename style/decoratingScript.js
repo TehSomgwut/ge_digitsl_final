@@ -24,3 +24,26 @@ sourceIcon.addEventListener(("click"),() => {
     })
     source.classList.contains("expand") ? source.classList.remove("expand") : source.classList.add("expand");
 })
+
+// animation  trick
+const Trick = document.getElementsByClassName("Trick")
+function TrickAppear(){
+    let delay = 0;
+    console.log("japisghw")
+    for(let i = 0 ; i < Trick.length;i++)
+    {
+        Trick[i].style.animation = `appear 0.5s ease ${delay}s 1`
+        delay = delay + 0.2;
+        Trick[i].addEventListener(("animationend"),() => {
+            Trick[i].style.opacity = "100%";
+        })
+    };
+
+}
+
+TrickAppear();
+//animation protection
+const protections = getElementsByClassName("protection")
+function protectionAppear() {
+    
+}
