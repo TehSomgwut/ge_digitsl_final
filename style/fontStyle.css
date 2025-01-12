@@ -43,3 +43,19 @@ figcaption{
     text-align:center;
     color:rgb(185, 0, 0);
 }
+
+.source {
+    font-family:Ptag;
+    font-size:1.25em;
+    font-weight:800;
+}
+
+.sourceContainer {
+    font-family:Ptag;
+    text-align:center;
+    font-size:1.25em;
+}
+
+.sourceBlock:hover {
+    cursor:pointer;
+}

@@ -1,4 +1,34 @@
 @import url(pageStyle.css);
+@keyframes spin{
+    50%{
+        scale:1.2;
+    }
+    100%{
+        transform:rotate(180deg);
+    }
+}
+
+@keyframes rainbow {
+    0%{background-color:rgb(253, 150, 255)}
+    20%{background-color:rgb(252, 150, 77)}
+    40%{background-color:rgb(179, 252, 77)}
+    60%{background-color:rgb(77, 252, 202)}
+    80%{background-color:rgb(109, 150, 252)}
+    100%{background-color:rgb(249, 150, 252)}
+}
+
+@keyframes appear {
+    0%{
+        opacity:0%;
+        scale:0.5;
+        transform:translateY(-80px)
+    }
+    100%{
+        opacity:100%;
+        scale:1;
+        transform:translateY(0px)
+    }
+}
 
 .type:hover,.hovered {
     color:var(--white);
@@ -29,4 +59,34 @@
 }
 #do3 a{
     transition: 0.4s;
+}
+
+.spin {
+    animation: spin 0.5s;
+    
+}
+
+.source svg:hover {
+    scale:1.2;
+    transition:0.3s;
+    opacity:100%;
+    cursor:pointer;
+}
+.source svg {
+    transition:0.3s;
+}
+
+.expand {
+    transition:1s;
+    border:dotted var(--mainTone-color-default) 3px;
+    width:95%;
+}
+
+.source{
+    transition:1s;
+    animation: rainbow 3s linear 0s infinite;
+}
+
+.sourceContainerAppear {
+    animation:appear 0.5s ease;
 }
